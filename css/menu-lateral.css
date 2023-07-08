@@ -1,0 +1,242 @@
+/*! *** Estilos de la barra de navegación lateral *** */
+
+/*! *** Estilos generales *** */
+
+header {
+    position: fixed;
+    width: calc(65%);
+    height: 100%;
+    background-color: rgb(68, 62, 62);
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.logo-pmr {
+    position: relative;
+    text-align: right;
+    margin: 20px;
+    color: rgb(214, 212, 212);
+}
+
+.logo {
+    float: left;
+    background-image: linear-gradient(to bottom right, #aa0a0a, #080891);
+    max-width: 100px;
+    height: 50px;
+    border: 2px solid white;
+}
+  
+
+/*! *** Icono de Menu desplegable *** */
+
+#menu-bar {
+    display: none;
+}
+
+.fa-list {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 1.45em;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    z-index: 200;
+    background-color: #6e6e6e9e;
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#menu-bar:checked~main {
+    margin-left: calc(65%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+#menu-bar:checked~footer {
+    margin-left: calc(65%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+#menu-bar:checked~.fa-list {
+    left: 350px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+#menu-bar:checked~header {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+#menu-bar:checked~main .presentacion {
+    width: 400px;
+}
+
+#menu-bar:checked~main .presentacion-proyectos {
+    width: 400px;
+}
+
+#menu-bar:checked~main .contenedor__portfolio h2 {
+    width: 400px;
+}
+
+#menu-bar:checked~main #contacto{
+    width: 400px;
+}
+
+#menu-bar:checked~footer{
+    width: 400px;
+}
+
+/*! *** Barra de navegación *** */
+
+.contenedor-nav {
+    position: relative;
+    text-align: right;
+    margin: 20px;
+    padding-top: 30px;
+}
+
+.active {
+    background-color: hsla(0, 0%, 55%, 0.467);
+    color: #fff;
+    font-size: 25px;
+}
+
+.active .fa-house {
+    color: #b81818;
+}
+
+.active .fa-folder-open {
+    color: #2a0fc6;
+}
+
+.active .fa-envelope {
+    color: #b81818;
+}
+
+.contenedor-nav li,
+a {
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(214, 212, 212);
+}
+
+.menu-barra li span {
+    color: rgb(214, 212, 212);
+    float: left;
+}
+
+/*! *** Footer de la barra lateral *** */
+
+.footer-nav {
+    width: 100%;
+    border-top: 2px solid rgba(46, 45, 45, 0.792);
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+.footer-nav span {
+    color: #6e6e6e;
+}
+
+.footer-nav .fa-linkedin:hover {
+    color: rgb(10, 102, 194);
+    scale: 1.3;
+}
+
+.footer-nav .fa-square-whatsapp:hover {
+    color: rgb(77, 200, 91);
+    scale: 1.3;
+}
+
+.footer-nav .fa-github:hover {
+    color: black;
+    scale: 1.5;
+}
+
+.footer-nav .fa-envelope:hover {
+    color: white;
+    scale: 1.3;
+}
+
+@media (min-width:810px) {
+    .fa-list {
+        display:none;
+        z-index: -10;
+    }
+    .fa-list::after {
+        display: none;
+        z-index: -10;
+    }
+    .fa-list::before {
+        display: none;
+        z-index: -10;
+    }
+
+    header {
+        display: flex;
+        width: calc(24%);
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+
+    main, footer {
+        margin-left: calc(24%);
+    }
+
+    .logo {
+        float: none;
+    }
+
+    .menu-barra li span {
+        float: right;
+        margin-left: 25px;
+    }
+
+    .footer-nav {
+        border-top: none;
+        font-size: 20px;
+        padding-top: 120px;
+    }
+}

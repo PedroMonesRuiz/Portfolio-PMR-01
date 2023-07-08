@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Pedro Mones Ruiz">
+    <meta property="og:title" content="Pedro Mones Ruiz - Programador">
+    <meta property="og:description" content="Soy diseñador web con conocimientos en HTML, CSS Y JS.">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="Foto de Pedro Mones Ruiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="css/imagenes/MR - logo-3.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/7b588a2960.js" crossorigin="anonymous"></script>
+    <title>Pedro Mones Ruiz</title>
+</head>
+
+<body>
+    <input type="checkbox" id="menu-bar">
+    <label class="fa-solid fa-list" for="menu-bar"></label>
+    <header>
+        <nav class="menu-lateral">
+            <div class="logo-pmr">
+                <img src="css/imagenes/MR - logo-3.png" alt="" class="logo">
+                <h1>Pedro Mones Ruiz</h1>
+                <p>Desarrollador Web</p>
+            </div>
+            <div class="contenedor-nav">
+                <ul class="menu-barra" id="menu">
+                    <li class="active"><a href="#inicio"><span class="fa-solid fa-house icono"></span>Inicio</a></li>
+                    <li><a href="#portfolio"><span class="fa-regular fa-folder-open icono"></span>Portfolio</a></li>
+                    <li><a href="#contacto"><span class="fa-solid fa-envelope icono"></span>Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <a href="https://www.linkedin.com/in/pedro-mones-ruiz-b54164161/" target="_blank"><span class="fa-brands fa-linkedin"></span></a>
+                <a href="https://api.whatsapp.com/send?phone=541154853816&amp;text=¡Hola!%20Vengo%20de%20tu%20Portfolio%20Web.%20Quiero%20hacer%20una%20consulta.%20" target="_blank"><span class="fa-brands fa-square-whatsapp"></span></a>
+                <a href="https://github.com/PedroMonesRuiz" target="_blank"><span class="fa-brands fa-github"></span></a>
+                <a href="mailto:monesruizpedro94@gmail.com" target="_blank"><span class="fa-solid fa-envelope"></span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="contenedor__inicio body__section" id="inicio">
+                <div class="presentacion">
+                    <div class="imagen-principal">
+                        <img src="css/imagenes/Foto Carnet 02.jpg" alt="Foto de Pedro Mones Ruiz">
+                    </div>
+                    <h2>¡Hola! Soy <strong>Pedro</strong> y soy desarrolador Web.</h2>
+                    <p>Manejo tecnolgias Fronted como HTML, CSS Y JS.
+                        <br>
+                        Ademas estoy capacitandome como progrmador en Java y como Tester QA.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor__portfolio body__section" id="portfolio">
+                <h2>Portfolio</h2>
+                <div class="presentacion-proyectos">
+                    <div class="proyectos">
+                        <div class="img-proyectos"><a href="https://wonderer-pmr.000webhostapp.com/galeria.html" target="_blank"><img src="css/imagenes/img-pag-Wonderer.png"
+                            alt="Imagen de la pagina Wonderer"></a></div>
+                        <div class="descripcion">
+                            <h3>Pagina Web Wonderer</h3>
+                            <p>Pagina de informes para viajes.</p>
+                            <br>
+                            <p>Pagina de practica, no brinda servicios.</p>
+                            <br>
+                            <p><strong>Funcionalidades:</strong> Formulario de contacto, web responsive.</p>
+                            <br>
+                            <a href="https://github.com/PedroMonesRuiz/wonderer" target="_blank"><p>¡Mira el codigo en GitHub!</p></a>
+                        </div>
+                    </div>
+                    <div class="proyectos">
+                        <div class="img-proyectos"><a href="https://de-cora-son.000webhostapp.com/index.html" target="_blank"><img src="css/imagenes/img-pag-De-Cora-Son.png"
+                            alt="Imagen de la pagina De Cora Son"></a></div>
+                        <div class="descripcion">
+                            <h3>Pagina Web De Cora Son</h3>
+                            <p>Pagina de emprendimiento de Mosaiquismo.</p>
+                            <br>
+                            <p>Pagina para negocio real, tatalmente funcional.</p>
+                            <br>
+                            <p><strong>Funcionalidades:</strong> Formulario de contacto, web responsive, slider de imagenes.</p>
+                            <br>
+                            <a href="https://github.com/PedroMonesRuiz/de-cora-son" target="_blank"><p>¡Mira el codigo en GitHub!</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor__contacto body__section" id="contacto">
+                <section id="contacto">
+                    <form class="contact_form" action="enviar.php" method="post">
+                        <ul>
+                            <li>
+                                <h2>Formulario de contacto</h2>
+                            </li>
+                            <div class="nombre-y-mail">
+                                <li>
+                                    <label for="nombre">Nombre:</label>
+                                    <br>
+                                    <input type="text" name="nombre" placeholder="Ingresa tu nombre" maxlength="30" required>
+                                </li>
+                                <li>
+                                    <label for="email">Email:</label>
+                                    <br>
+                                    <input type="email" name="email" placeholder="email@dominio.com" maxlength="40" required>
+                                </li>
+                            </div>
+                            <li>
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea name="mensaje" cols="40" rows="6" maxlength="250"></textarea>
+                            </li>
+                            <li id="btn-contacto">
+                                <button class="submit" type="submit">¡Contactame!</button>
+                            </li>
+                        </ul>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Pedro Mones Ruiz &copy 2023</p>
+    </footer>
+    <script src="js/scroll-menu.js"></script>
+</body>
+
+</html>

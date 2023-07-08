@@ -1,0 +1,63 @@
+/*! *** Estilos de la seccion de inicio *** */
+
+.body__section {
+    position: relative;
+}
+
+.contenedor__inicio {
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #aa0a0a, #080891);
+    position: relative;
+    padding-top: auto;
+    display: block;
+    /* border: 5px solid black; */
+    padding: 20px;
+    padding-bottom: 130px;
+}
+
+.imagen-principal {
+    width: 400px;
+    max-width: 190px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.imagen-principal img {
+    width: 100%;
+    display: block;
+}
+
+.presentacion {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    color: rgb(235, 233, 233);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.presentacion h2 {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.presentacion p {
+    font-size: 20px;
+}
+
+@media (min-width:810px) {
+    .contenedor__inicio {
+        position: relative;
+    }
+}

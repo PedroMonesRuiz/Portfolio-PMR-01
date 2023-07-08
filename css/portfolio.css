@@ -1,0 +1,78 @@
+/*! *** Estilos de la seccion de Portfolio *** */
+
+.contenedor__portfolio {
+    position: relative;
+    height: 100%;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: rgb(235, 233, 233);
+    /* border: 5px solid black; */
+}
+
+.contenedor__portfolio h2 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.presentacion-proyectos {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.proyectos {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    background-color: rgb(177, 173, 173);
+    margin: auto;
+    padding: 0;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.proyectos:hover {
+    scale: 1.1;
+    box-shadow: 0 0 0  #0a0a0a, 0 15px 50px;
+}
+
+.img-proyectos {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+    margin: auto;
+}
+
+.img-proyectos img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.descripcion {
+    position: relative;
+    padding: 10px;
+}
+
+.descripcion h3 {
+    margin-bottom: 10px;
+}
+
+.descripcion a{
+    color: blue;
+}
+
+@media (min-width:810px) {
+    .presentacion-proyectos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .proyectos {
+        width: 330px;
+        /* min-height: 490px; */
+        margin: 10;
+    }
+}

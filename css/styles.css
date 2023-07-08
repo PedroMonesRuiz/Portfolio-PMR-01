@@ -1,0 +1,46 @@
+@import url(menu-lateral.css);
+@import url(inicio.css);
+@import url(portfolio.css);
+@import url(contacto.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1;
+    overflow: hidden;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+footer {
+    height: 90px;
+    text-align: center;
+    background-color: rgb(174, 176, 176);
+    border-top: 1px solid rgba(134, 133, 133, 0.796);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+footer p {
+    margin-top: 30px;
+    font-size: 20px;
+}

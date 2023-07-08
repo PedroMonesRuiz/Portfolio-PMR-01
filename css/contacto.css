@@ -1,0 +1,150 @@
+/* ! ******* Estilos del formulario de contacto ******* */
+
+/* ! ******* Estilos generales ******* */
+
+.contenedor__contacto {
+    position: relative;
+    /* background-color: rgb(8, 125, 14); */
+    /* border: 5px solid black; */
+}
+
+#contacto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact_form {
+    width: 90%;
+}
+
+/* ! ******* Estilos del encabezado ******* */
+
+.contact_form h2 {
+    color: #6a6b6c;
+    display: block;
+    font-family: calibri;
+    font-size: 40px;
+    text-align: center;
+}
+
+.contact_form #enviado {
+    color:rgb(227, 41, 124);
+}
+
+/* ! ******* Estilos de la secciones del formulario ******* */
+
+.contact_form ul {
+    width: 100%;
+    list-style-type: none;
+}
+
+.contact_form li {
+    padding: 10px;
+    position: relative;
+}
+
+.contact_form label {
+    color: rgb(118, 118, 118);
+    display: inline-block;
+    font-family: calibri;
+    font-size: 20px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.contact_form input {
+    height: 50px;
+    width: 100%;
+    padding: 5px 8px;
+}
+
+.contact_form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+#btn-contacto {
+    text-align: center;
+}
+
+.contact_form input, .contact_form textarea {
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #888;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+/* ! ******* Estilos cuando se enfoca un punto del formulario ******* */
+
+.contact_form input:focus, .contact_form textarea:focus {
+    background: #fff;
+    border: 1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+
+/* ! ******* Estilos cuando se completo correctamente un campo ******* */
+
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+    box-shadow: 0 0 15px #5cd053;
+    border-color: #28921f;
+}
+
+/* ! ******* Estilos cuando no se completo correctamente un campo ******* */
+
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+    box-shadow: 0 0 15px #d45252;
+    border-color: #b03535;
+}
+
+/* ! ******* Estilos del boton de enviar ******* */
+
+button.submit {
+    font-size: 18px;
+    padding: 17px;
+    font-family: helvetica,calibri,Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    color: #fefcfc;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#9853ec), to(#1e17da));
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+button.submit:hover {
+    opacity: 55;
+    cursor: pointer;
+    color: #4c4b4b;
+}
+
+button.submit:active {
+    border: 1px solid #222;
+    box-shadow: 0 0 10px 5px #444 inset;
+}
+
+/* ! ******* Medias Query para ajustar tamaños ******* */
+
+@media (min-width:600px) {
+    .nombre-y-mail {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nombre-y-mail input {
+        width: 326px ;
+    }
+}
